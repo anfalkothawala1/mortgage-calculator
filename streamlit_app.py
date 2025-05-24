@@ -4,13 +4,9 @@ from PIL import Image
 
 # Load and show the logo
 logo = Image.open("nexcap_logo.png")
-st.image(logo, width=150)  # adjust width as needed
+st.image(logo, width=300)  # Increased width for better visibility
 
-
-import streamlit as st
-from math import pow
-
-st.title("🏠 Mortgage Purchase Price Calculator")
+st.title("NCL Reverse Mortgage Calc")
 
 # Inputs
 target_payment = st.number_input("Target Monthly Payment ($)", value=3000)
